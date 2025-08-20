@@ -7,3 +7,4 @@ latex
 *.pyc
 build
 ._*
+*.o
