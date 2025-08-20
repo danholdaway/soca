@@ -9,7 +9,7 @@
 !
 !=======================================================================
 
-module MOM_grid
+module MOM_grid_soca
 
 use, intrinsic :: iso_fortran_env, only: real64
 
@@ -51,6 +51,6 @@ contains
 
 ! No public functions needed for this simplified version
 
-end module MOM_grid
+end module MOM_grid_soca
 
 !=======================================================================

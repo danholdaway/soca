@@ -23,12 +23,12 @@ use kinds, only: kind_real
 use oops_variables_mod, only: oops_variables
 
 ! MOM6 / FMS modules
-use fms_io_mod, only: register_restart_field, &
+use fms_io_mod_soca, only: register_restart_field, &
                       restart_file_type, restore_state, free_restart_type, save_restart, &
                       file_exist, field_exist
-use MOM_remapping, only : remapping_CS, initialize_remapping, remapping_core_h, &
+use MOM_remapping_soca, only : remapping_CS, initialize_remapping, remapping_core_h, &
                           end_remapping
-use mpp_domains_mod, only : mpp_update_domains
+use mpp_domains_mod_soca, only : mpp_update_domains
 
 ! SOCA modules
 use soca_fields_metadata_mod, only : soca_field_metadata

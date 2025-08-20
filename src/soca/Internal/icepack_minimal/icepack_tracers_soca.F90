@@ -9,12 +9,12 @@
 !
 !=======================================================================
 
-module icepack_tracers
+module icepack_tracers_soca
 
-use icepack_kinds
-use icepack_parameters, only: c0, c1, puny
-use icepack_warnings, only: warnstr, icepack_warnings_add
-use icepack_warnings, only: icepack_warnings_setabort, icepack_warnings_aborted
+use icepack_kinds_soca
+use icepack_parameters_soca, only: c0, c1, puny
+use icepack_warnings_soca, only: warnstr, icepack_warnings_add
+use icepack_warnings_soca, only: icepack_warnings_setabort, icepack_warnings_aborted
 
 implicit none
 
@@ -168,6 +168,6 @@ end subroutine icepack_init_tracer_indices
 
 !=======================================================================
 
-end module icepack_tracers
+end module icepack_tracers_soca
 
 !=======================================================================

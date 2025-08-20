@@ -10,14 +10,14 @@ use fckit_configuration_module, only: fckit_configuration
 use fckit_exception_module, only: fckit_exception
 use fckit_mpi_module, only: fckit_mpi_comm
 use kinds, only: kind_real
-use mpp_domains_mod, only : mpp_update_domains
+use mpp_domains_mod_soca, only : mpp_update_domains
 
-use icepack_itd, only: icepack_init_itd, cleanup_itd
-use icepack_warnings, only: icepack_warnings_flush, icepack_warnings_aborted
-use icepack_tracers, only: icepack_init_tracer_sizes, icepack_init_tracer_indices
-use icepack_parameters, only: icepack_init_parameters, icepack_recompute_constants
-use icepack_parameters, only: tfrz_option, ktherm
-use icepack_therm_shared, only: icepack_sea_freezing_temperature, l_brine
+use icepack_itd_soca, only: icepack_init_itd, cleanup_itd
+use icepack_warnings_soca, only: icepack_warnings_flush, icepack_warnings_aborted
+use icepack_tracers_soca, only: icepack_init_tracer_sizes, icepack_init_tracer_indices
+use icepack_parameters_soca, only: icepack_init_parameters, icepack_recompute_constants
+use icepack_parameters_soca, only: tfrz_option, ktherm
+use icepack_therm_shared_soca, only: icepack_sea_freezing_temperature, l_brine
 
 use soca_geom_mod, only: soca_geom
 use soca_state_mod, only: soca_state

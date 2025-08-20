@@ -8,11 +8,11 @@ module soca_ciceutils_mod
 use kinds, only: kind_real
 use netcdf
 use fckit_mpi_module, only: fckit_mpi_comm
-use icepack_itd, only: aggregate_area
+use icepack_itd_soca, only: aggregate_area
 use soca_utils, only: nc_check
 use soca_geom_mod, only: soca_geom
-use mpp_domains_mod, only : mpp_update_domains
-use mpp_mod, only : mpp_gather, mpp_root_pe, mpp_pe
+use mpp_domains_mod_soca, only : mpp_update_domains
+use mpp_mod_soca, only : mpp_gather, mpp_root_pe, mpp_pe
 
 implicit none
 private

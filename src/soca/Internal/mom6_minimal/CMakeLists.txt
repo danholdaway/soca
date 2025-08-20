@@ -2,17 +2,17 @@
 # This contains only the essential MOM6 functionality needed by SOCA
 
 list(APPEND mom6_minimal_src_files
-  MOM_error_handler.F90
-  MOM_time_manager.F90
-  MOM_file_parser.F90
-  MOM_get_input.F90
-  MOM_grid.F90
-  MOM_domains.F90
-  MOM_io.F90
-  MOM_restart.F90
-  MOM_remapping.F90
-  fms_interfaces.F90
-  MOM.F90
+  MOM_error_handler_soca.F90
+  MOM_time_manager_soca.F90
+  MOM_file_parser_soca.F90
+  MOM_get_input_soca.F90
+  MOM_grid_soca.F90
+  MOM_domains_soca.F90
+  MOM_io_soca.F90
+  MOM_restart_soca.F90
+  MOM_remapping_soca.F90
+  fms_interfaces_soca.F90
+  MOM_soca.F90
 )
 
 add_library(mom6_minimal STATIC ${mom6_minimal_src_files})

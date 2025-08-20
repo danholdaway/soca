@@ -9,9 +9,9 @@
 !
 !=======================================================================
 
-module MOM_remapping
+module MOM_remapping_soca
 
-use MOM_error_handler, only: MOM_error, FATAL
+use MOM_error_handler_soca, only: MOM_error, FATAL
 
 implicit none
 
@@ -127,6 +127,6 @@ end subroutine remapping_core_h
 
 !=======================================================================
 
-end module MOM_remapping
+end module MOM_remapping_soca
 
 !=======================================================================

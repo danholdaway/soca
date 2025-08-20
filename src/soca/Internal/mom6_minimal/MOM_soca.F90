@@ -9,10 +9,10 @@
 !
 !=======================================================================
 
-module MOM
+module MOM_soca
 
-use MOM_grid, only: ocean_grid_type
-use MOM_domains, only: MOM_domain_type  
+use MOM_grid_soca, only: ocean_grid_type
+use MOM_domains_soca, only: MOM_domain_type  
 use MOM_time_manager, only: time_type
 use MOM_file_parser, only: param_file_type
 use MOM_get_input, only: directories
@@ -167,6 +167,6 @@ end subroutine get_MOM_state_elements
 
 !=======================================================================
 
-end module MOM
+end module MOM_soca
 
 !=======================================================================

@@ -9,10 +9,10 @@
 !
 !=======================================================================
 
-module MOM_domains
+module MOM_domains_soca
 
-use MOM_file_parser, only: param_file_type
-use MOM_error_handler, only: MOM_error, FATAL
+use MOM_file_parser_soca, only: param_file_type
+use MOM_error_handler_soca, only: MOM_error, FATAL
 
 implicit none
 
@@ -86,6 +86,6 @@ end subroutine MOM_infra_end
 
 !=======================================================================
 
-end module MOM_domains
+end module MOM_domains_soca
 
 !=======================================================================

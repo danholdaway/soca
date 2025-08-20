@@ -9,10 +9,10 @@
 !
 !=======================================================================
 
-module icepack_parameters
+module icepack_parameters_soca
 
-use icepack_kinds
-use icepack_warnings, only: icepack_warnings_aborted, &
+use icepack_kinds_soca
+use icepack_warnings_soca, only: icepack_warnings_aborted, &
     icepack_warnings_add, icepack_warnings_setabort
 
 implicit none
@@ -158,6 +158,6 @@ end subroutine icepack_recompute_constants
 
 !=======================================================================
 
-end module icepack_parameters
+end module icepack_parameters_soca
 
 !=======================================================================

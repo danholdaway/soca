@@ -9,9 +9,9 @@
 !
 !=======================================================================
 
-module MOM_get_input
+module MOM_get_input_soca
 
-use MOM_file_parser, only: param_file_type
+use MOM_file_parser_soca, only: param_file_type
 
 implicit none
 
@@ -52,6 +52,6 @@ end subroutine Get_MOM_Input
 
 !=======================================================================
 
-end module MOM_get_input
+end module MOM_get_input_soca
 
 !=======================================================================

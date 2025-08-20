@@ -9,7 +9,7 @@
 !
 !=======================================================================
 
-module MOM_error_handler
+module MOM_error_handler_soca
 
 implicit none
 
@@ -71,6 +71,6 @@ end function is_root_pe
 
 !=======================================================================
 
-end module MOM_error_handler
+end module MOM_error_handler_soca
 
 !=======================================================================

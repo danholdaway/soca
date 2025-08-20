@@ -9,14 +9,14 @@
 !
 !=======================================================================
 
-module icepack_therm_shared
+module icepack_therm_shared_soca
 
-use icepack_kinds
-use icepack_parameters, only: c0, c1, c2, c4, p5, pi, puny
-use icepack_parameters, only: cp_ocn, cp_ice, rhoi, rhos, Lfresh
-use icepack_parameters, only: tfrz_option, depressT, Tocnfrz
-use icepack_warnings, only: warnstr, icepack_warnings_add
-use icepack_warnings, only: icepack_warnings_setabort, icepack_warnings_aborted
+use icepack_kinds_soca
+use icepack_parameters_soca, only: c0, c1, c2, c4, p5, pi, puny
+use icepack_parameters_soca, only: cp_ocn, cp_ice, rhoi, rhos, Lfresh
+use icepack_parameters_soca, only: tfrz_option, depressT, Tocnfrz
+use icepack_warnings_soca, only: warnstr, icepack_warnings_add
+use icepack_warnings_soca, only: icepack_warnings_setabort, icepack_warnings_aborted
 
 implicit none
 
@@ -120,6 +120,6 @@ end function icepack_sea_freezing_temperature
 
 !=======================================================================
 
-end module icepack_therm_shared
+end module icepack_therm_shared_soca
 
 !=======================================================================
