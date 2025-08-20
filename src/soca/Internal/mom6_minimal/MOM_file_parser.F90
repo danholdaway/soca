@@ -19,9 +19,8 @@ private
 
 ! Parameter file type - simplified version
 type, public :: param_file_type
-  private
   character(len=:), allocatable :: filename
-  logical :: is_open = .false.
+  logical, public :: is_open = .false.
 end type param_file_type
 
 public :: get_param, close_param_file

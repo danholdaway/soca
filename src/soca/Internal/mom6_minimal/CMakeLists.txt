@@ -11,6 +11,7 @@ list(APPEND mom6_minimal_src_files
   MOM_io.F90
   MOM_restart.F90
   MOM_remapping.F90
+  fms_interfaces.F90
   MOM.F90
 )
 

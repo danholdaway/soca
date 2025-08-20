@@ -73,7 +73,6 @@ real (kind=dbl_kind), public :: &
    piq        = spval_const     ,&! 0.25 * pi
    pi2        = spval_const     ,&! 2 * pi
    rad_to_deg = spval_const     ,&! conversion factor, radians to degrees
-   Lfresh     = spval_const     ,&! latent heat of melting of fresh ice (J/kg)
    cprho      = spval_const     ,&! for ocean mixed layer (J kg / K m^3)
    Cp         = spval_const       ! proport const for PE
 
@@ -96,14 +95,16 @@ real (kind=dbl_kind), public :: &
    cp_air    = 1005.0_dbl_kind  ,&! specific heat of air (J/kg/K)
    cp_ice    = 2106._dbl_kind   ,&! specific heat of fresh ice (J/kg/K)
    cp_ocn    = 4218._dbl_kind   ,&! specific heat of ocn    (J/kg/K)
-   Lfresh    = 3.34e5_dbl_kind  ,&! Latent heat of melting of fresh ice (J/kg)
    Lvap      = 2.501e6_dbl_kind ,&! Latent heat of evaporation of water (J/kg)
-   Lsub      = Lvap + Lfresh    ,&! Latent heat of sublimation of fresh ice (J/kg)
+   Lsub      = 2.8345e6_dbl_kind,&! Latent heat of sublimation of fresh ice (J/kg)
    ice_ref_salinity = 4._dbl_kind, &  ! (ppt)
    hs_min    = 1.e-4_dbl_kind   ,&! min snow thickness (m)
    hi_min    = 0.01_dbl_kind   ,&! minimum ice thickness (m)
    depressT  = 0.054_dbl_kind  ,&! Tf:brine salinity ratio (C/ppt)
    Tocnfrz   = -1.8_dbl_kind      ! freezing temp of seawater (C)
+
+real (kind=dbl_kind), public :: &
+   Lfresh    = 3.34e5_dbl_kind     ! Latent heat of melting of fresh ice (J/kg)
 
 !-----------------------------------------------------------------
 ! Thermodynamics options
@@ -148,8 +149,8 @@ piq = 0.25_dbl_kind * pi
 pi2 = 2.0_dbl_kind * pi
 rad_to_deg = 180.0_dbl_kind/pi
 
-! thermal properties
-Lfresh = Lsub - Lvap
+! thermal properties - update derived values
+Lsub = Lvap + Lfresh
 cprho = cp_ocn * rhow
 Cp = 0.5_dbl_kind * rhoi / rhow
 

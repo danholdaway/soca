@@ -4,6 +4,10 @@ JEDI encapsulation of MOM6
 
 This software is licensed under the terms of the Apache Licence Version 2.0 which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
 
+## Dependencies
+
+SOCA has internalized minimal implementations of its MOM6 and IcePack dependencies to reduce build complexity. The full external dependencies are no longer required as git submodules. See `INTERNALIZATION.md` for details.
+
 ## Building
 For more details about JEDI, including installation see: https://jointcenterforsatellitedataassimilation-jedi-docs.readthedocs-hosted.com/
 
