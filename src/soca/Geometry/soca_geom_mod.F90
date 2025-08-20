@@ -16,7 +16,7 @@ use kinds, only: kind_real
 use type_fieldset, only: fieldset_type
 
 ! mom6 / fms modules
-use fms_mod, only : fms_init
+use fms_mod, only : fms_init, fms_end
 use fms_io_mod, only : fms_io_init, fms_io_exit, &
                        register_restart_field, restart_file_type, &
                        restore_state, free_restart_type, save_restart

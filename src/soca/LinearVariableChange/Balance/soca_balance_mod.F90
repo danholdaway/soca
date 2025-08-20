@@ -6,7 +6,7 @@
 module soca_balance_mod
 
 use fckit_configuration_module, only: fckit_configuration
-use fms_mod_soca, only: read_data
+use fms_mod, only: read_data
 use kinds, only: kind_real
 use atlas_module, only: atlas_field
 

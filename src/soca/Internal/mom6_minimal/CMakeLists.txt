@@ -11,7 +11,6 @@ list(APPEND mom6_minimal_src_files
   MOM_io_soca.F90
   MOM_restart_soca.F90
   MOM_remapping_soca.F90
-  fms_interfaces_soca.F90
   MOM_soca.F90
 )
 

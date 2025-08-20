@@ -14,7 +14,7 @@ use iso_c_binding
 use oops_variables_mod, only: oops_variables
 use kinds, only: kind_real
 
-use mpp_domains_mod_soca, only : mpp_update_domains
+use mpp_domains_mod, only : mpp_update_domains
 
 ! soca modules
 use soca_geom_mod, only: soca_geom

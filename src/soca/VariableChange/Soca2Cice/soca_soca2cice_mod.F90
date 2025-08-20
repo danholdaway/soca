@@ -10,7 +10,7 @@ use fckit_configuration_module, only: fckit_configuration
 use fckit_exception_module, only: fckit_exception
 use fckit_mpi_module, only: fckit_mpi_comm
 use kinds, only: kind_real
-use mpp_domains_mod_soca, only : mpp_update_domains
+use mpp_domains_mod, only : mpp_update_domains
 
 use icepack_itd_soca, only: icepack_init_itd, cleanup_itd
 use icepack_warnings_soca, only: icepack_warnings_flush, icepack_warnings_aborted
