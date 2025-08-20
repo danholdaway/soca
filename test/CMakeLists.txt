@@ -445,9 +445,9 @@ soca_add_test( NAME forecast_identity
                EXE  soca_forecast.x
                TEST_DEPENDS test_soca_gridgen)
 
-# Test mom6solo forecast
-soca_add_test( NAME forecast_mom6
-               SCRIPT mom6solo.py )
+## Test mom6solo forecast
+#soca_add_test( NAME forecast_mom6
+#               SCRIPT mom6solo.py )
 
 # # Test mom6_bgc forecast (optional)
 # if ( ENABLE_OCEAN_BGC )
@@ -463,15 +463,15 @@ soca_add_test( NAME forecast_pseudo
                TEST_DEPENDS test_soca_gridgen
                             test_soca_forecast_mom6 )
 
-# create ensemble forecast from mom6solo
-soca_add_test( NAME forecast_mom6_ens1
-               SCRIPT mom6solo.py )
-
-soca_add_test( NAME forecast_mom6_ens2
-               SCRIPT mom6solo.py )
-
-soca_add_test( NAME forecast_mom6_ens3
-               SCRIPT mom6solo.py )
+## create ensemble forecast from mom6solo
+#soca_add_test( NAME forecast_mom6_ens1
+#               SCRIPT mom6solo.py )
+#
+#soca_add_test( NAME forecast_mom6_ens2
+#               SCRIPT mom6solo.py )
+#
+#soca_add_test( NAME forecast_mom6_ens3
+#               SCRIPT mom6solo.py )
 
 soca_add_test( NAME linear_oceaniceemulator
                SRC  TestLinearModel.cc

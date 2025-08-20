@@ -16,8 +16,8 @@ use kinds, only: kind_real
 use type_fieldset, only: fieldset_type
 
 ! mom6 / fms modules
-use fms_mod_soca, only : fms_init, fms_end
-use fms_io_mod_soca, only : fms_io_init, fms_io_exit, &
+use fms_mod, only : fms_init
+use fms_io_mod, only : fms_io_init, fms_io_exit, &
                        register_restart_field, restart_file_type, &
                        restore_state, free_restart_type, save_restart
 use MOM_soca, only : MOM_control_struct, initialize_MOM, MOM_end, get_MOM_state_elements
@@ -29,10 +29,10 @@ use MOM_get_input_soca, only : directories, Get_MOM_Input
 use MOM_grid_soca, only : ocean_grid_type
 use MOM_io_soca, only : io_infra_init, io_infra_end
 use MOM_time_manager_soca, only : real_to_time, JULIAN, set_calendar_type
-use mpp_domains_mod_soca, only : mpp_get_compute_domain, mpp_get_data_domain, &
+use mpp_domains_mod, only : mpp_get_compute_domain, mpp_get_data_domain, &
                             mpp_get_global_domain, mpp_update_domains, &
                             CYCLIC_GLOBAL_DOMAIN, FOLD_NORTH_EDGE
-use mpp_mod_soca,only : mpp_init
+use mpp_mod,only : mpp_init
 use time_interp_external_mod, only : time_interp_external_init
 use time_manager_mod, only: time_type
 
@@ -49,7 +49,7 @@ private
 
 ! A default value to indicate that the halo region has not been updated
 ! during a halo exchange.
-! Note, it seems we had been using invalud halo points with lat/lon of 0,0
+! Note, it seems we had been using invalid halo points with lat/lon of 0,0
 ! oops!
 real(kind=kind_real), parameter :: INVALID_HALO = -999_kind_real
 
