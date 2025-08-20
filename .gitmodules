@@ -1,6 +1,1 @@
-[submodule "external/mom6/MOM6"]
-	path = external/mom6/MOM6
-	url = https://github.com/NOAA-EMC/MOM6
-[submodule "external/icepack/Icepack"]
-	path = external/icepack/Icepack
-	url = https://github.com/CICE-Consortium/Icepack.git
+# Git submodules removed - dependencies are now internalized in src/soca/Internal/

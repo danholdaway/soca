@@ -48,14 +48,7 @@ endif()
 include_directories( ${NETCDF_INCLUDE_DIRS} )
 
 ################################################################################
-# Model
-# TODO update to allow switching between mom6solo (here) and UFS (external)
-################################################################################
-add_subdirectory(external/mom6)
-add_subdirectory(external/icepack)
-
-################################################################################
-# Sources
+# Sources - Internal modules are now built as part of SOCA
 ################################################################################
 set( SOCA_LINKER_LANGUAGE CXX)
 

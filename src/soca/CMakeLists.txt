@@ -36,8 +36,8 @@ target_link_libraries( soca PUBLIC atlas )
 target_link_libraries( soca PUBLIC atlas_f )
 target_link_libraries( soca PUBLIC fms )
 target_link_libraries( soca PUBLIC gsw )
-target_link_libraries( soca PUBLIC mom6 )
-target_link_libraries( soca PUBLIC icepack_limited ) # custom soca build with only some functions built
+target_link_libraries( soca PUBLIC mom6_minimal )
+target_link_libraries( soca PUBLIC icepack_minimal ) # minimal soca build with only needed functions
 target_link_libraries( soca PUBLIC oops )
 target_link_libraries( soca PUBLIC saber )
 target_link_libraries( soca PUBLIC ioda )
@@ -54,6 +54,7 @@ if(Torch_FOUND)
 endif()
 
 # Add source code in the subdirectories
+add_subdirectory(Internal)
 add_subdirectory(AnalyticInit)
 add_subdirectory(Covariance)
 add_subdirectory(Fields)
