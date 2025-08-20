@@ -8,9 +8,9 @@
 !
 !=======================================================================
 
-module icepack_warnings
+module icepack_warnings_soca
 
-use icepack_kinds
+use icepack_kinds_soca
 implicit none
 
 private
@@ -104,6 +104,6 @@ end subroutine icepack_warnings_setabort
 
 !=======================================================================
 
-end module icepack_warnings
+end module icepack_warnings_soca
 
 !=======================================================================

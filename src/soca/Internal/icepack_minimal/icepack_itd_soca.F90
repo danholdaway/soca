@@ -9,16 +9,16 @@
 !
 !=======================================================================
 
-module icepack_itd
+module icepack_itd_soca
 
-use icepack_kinds
-use icepack_parameters, only: c0, c1, c2, c3, c4, c15, c25, c100, p1, p01, p001, p5, puny
-use icepack_parameters, only: Lfresh, rhos, ice_ref_salinity, hs_min, cp_ice, rhoi
-use icepack_tracers,    only: ncat, nilyr, nslyr, nblyr, ntrcr
-use icepack_tracers,    only: nt_Tsfc, nt_qice, nt_qsno, nt_sice
-use icepack_parameters, only: hi_min
-use icepack_warnings,   only: warnstr, icepack_warnings_add
-use icepack_warnings,   only: icepack_warnings_setabort, icepack_warnings_aborted
+use icepack_kinds_soca
+use icepack_parameters_soca, only: c0, c1, c2, c3, c4, c15, c25, c100, p1, p01, p001, p5, puny
+use icepack_parameters_soca, only: Lfresh, rhos, ice_ref_salinity, hs_min, cp_ice, rhoi
+use icepack_tracers_soca,    only: ncat, nilyr, nslyr, nblyr, ntrcr
+use icepack_tracers_soca,    only: nt_Tsfc, nt_qice, nt_qsno, nt_sice
+use icepack_parameters_soca, only: hi_min
+use icepack_warnings_soca,   only: warnstr, icepack_warnings_add
+use icepack_warnings_soca,   only: icepack_warnings_setabort, icepack_warnings_aborted
 
 implicit none
 
@@ -184,6 +184,6 @@ end subroutine cleanup_itd
 
 !=======================================================================
 
-end module icepack_itd
+end module icepack_itd_soca
 
 !=======================================================================

@@ -2,12 +2,12 @@
 # This contains only the essential IcePack functionality needed by SOCA
 
 list(APPEND icepack_minimal_src_files
-  icepack_kinds.F90
-  icepack_warnings.F90  
-  icepack_parameters.F90
-  icepack_tracers.F90
-  icepack_therm_shared.F90
-  icepack_itd.F90
+  icepack_kinds_soca.F90
+  icepack_warnings_soca.F90  
+  icepack_parameters_soca.F90
+  icepack_tracers_soca.F90
+  icepack_therm_shared_soca.F90
+  icepack_itd_soca.F90
 )
 
 add_library(icepack_minimal STATIC ${icepack_minimal_src_files})

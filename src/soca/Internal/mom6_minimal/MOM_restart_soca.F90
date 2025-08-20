@@ -9,7 +9,7 @@
 !
 !=======================================================================
 
-module MOM_restart
+module MOM_restart_soca
 
 implicit none
 
@@ -22,6 +22,6 @@ end type MOM_restart_CS
 
 ! No public functions needed - this is just a placeholder for the type
 
-end module MOM_restart
+end module MOM_restart_soca
 
 !=======================================================================

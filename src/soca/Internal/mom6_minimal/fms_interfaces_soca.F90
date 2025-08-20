@@ -5,7 +5,7 @@
 !
 !=======================================================================
 
-module fms_mod
+module fms_mod_soca
 
 implicit none
 
@@ -24,11 +24,11 @@ end subroutine fms_init
 
 !=======================================================================
 
-end module fms_mod
+end module fms_mod_soca
 
 !=======================================================================
 
-module fms_io_mod
+module fms_io_mod_soca
 
 implicit none
 
@@ -103,11 +103,11 @@ end function field_exist
 
 !=======================================================================
 
-end module fms_io_mod
+end module fms_io_mod_soca
 
 !=======================================================================
 
-module mpp_mod
+module mpp_mod_soca
 
 implicit none
 
@@ -126,11 +126,11 @@ end subroutine mpp_init
 
 !=======================================================================
 
-end module mpp_mod
+end module mpp_mod_soca
 
 !=======================================================================
 
-module mpp_domains_mod
+module mpp_domains_mod_soca
 
 implicit none
 
@@ -209,11 +209,11 @@ end function mpp_pe
 
 !=======================================================================
 
-end module mpp_domains_mod
+end module mpp_domains_mod_soca
 
 !=======================================================================
 
-module time_interp_external_mod
+module time_interp_external_mod_soca
 
 implicit none
 
@@ -231,4 +231,4 @@ end subroutine time_interp_external_init
 
 !=======================================================================
 
-end module time_interp_external_mod
+end module time_interp_external_mod_soca

@@ -9,9 +9,9 @@
 !
 !=======================================================================
 
-module MOM_file_parser
+module MOM_file_parser_soca
 
-use MOM_error_handler, only: MOM_error, FATAL, WARNING
+use MOM_error_handler_soca, only: MOM_error, FATAL, WARNING
 
 implicit none
 
@@ -65,6 +65,6 @@ end subroutine close_param_file
 
 !=======================================================================
 
-end module MOM_file_parser
+end module MOM_file_parser_soca
 
 !=======================================================================

@@ -9,7 +9,7 @@
 !
 !=======================================================================
 
-module MOM_time_manager
+module MOM_time_manager_soca
 
 use, intrinsic :: iso_fortran_env, only: real64
 
@@ -50,6 +50,6 @@ end subroutine set_calendar_type
 
 !=======================================================================
 
-end module MOM_time_manager
+end module MOM_time_manager_soca
 
 !=======================================================================
